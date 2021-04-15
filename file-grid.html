@@ -1,0 +1,415 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="A fully featured admin theme which can be used to build CRM, CMS, etc." />
+    
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="./assets/favicon/favicon.ico" type="image/x-icon"/>
+    
+    <!-- Libs CSS -->
+    <link rel="stylesheet" href="./assets/css/libs.bundle.css" />
+    
+    <!-- Theme CSS -->
+    <link rel="stylesheet" href="./assets/css/theme.bundle.css" />
+
+    <!-- Feather CSS -->
+    <link rel="stylesheet" href="./assets/feather-icons/feather.css" />
+
+    <!-- Fontawesome CSS -->
+    <link rel="stylesheet" href="./assets/fontawesome/css/fontawesome.min.css" />
+    <link rel="stylesheet" href="./assets/fontawesome/css/all.min.css" />
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    
+    <!-- Title -->
+    <title>Drive</title>
+</head>
+<body>
+    <header class="fixed-top">
+        <nav class="navbar navbar-expand navbar-light bg-white shadow-sm" aria-label="Main navigation">
+            <div class="container-fluid capped-1600">
+                <div class="col-3 d-flex align-items-center">
+                    <a class="navbar-brand" href="#" style="margin-right: 4vw">
+                        <img src="./assets/img/logo.svg" alt="">
+                    </a>
+                    <form class="autosearch position-relative">
+                        <div class="input-wrap">
+                            <span>
+                                <i class="feather-search"></i>
+                            </span>
+                            <input class="input-rounded search-auto" id="search" type="text" name="" placeholder="What are you looking for?">
+                        </div>
+                        <!-- Search list -->
+                        <div class="autosearch-list">
+                            <ul class="autosearch-list-item dropdown-menu w-100">
+                                <li>
+                                    <a class="dropdown-item" href="#">
+                                        <span class="icon"><i class="feather-search"></i></span>Sample Search
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="dropdown-item" href="#">
+                                        <span class="icon"><i class="feather-search"></i></span>Brief Document
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="dropdown-item" href="#">
+                                        <span class="icon"><i class="feather-search"></i></span>Get Sharable Link
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </form>
+                </div>
+                <div class="justify-content-center" id="primary-nav">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item ">
+                            <a class="nav-link" aria-current="page" href="index.html">Graphical Dashboard</a>
+                        </li>
+                        <li class="nav-item active">
+                            <a class="nav-link" href="sales.html">Drive</a>
+                        </li>
+                        <li class="nav-item ">
+                            <a class="nav-link" href="receipts.html">Manage</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="d-flex justify-content-end align-items-center col-3 ">
+                    <a href="support.html" class="header-support" style="margin-left: 15px;">
+                        <span class="capicon cap-settings"></span>
+                    </a>
+                    <a href="support.html" class="header-support" style="margin-left: 15px;">
+                        <span class="capicon feather-bell"></span>
+                    </a>
+                    <a href="support.html" class="header-support" style="margin-left: 15px;">
+                        <span class="capicon feather-help-circle"></span>
+                    </a>
+                    <a href="support.html" class="header-support" style="margin-left: 15px;">
+                        <span class="capicon cap-support"></span>
+                    </a>
+                </div>
+            </div>
+        </nav>
+        <!-- Sales Pages -->
+        <div class="secondary-nav-wrap nav-scroller bg-white nav-box-shadow">
+            <nav id="secondary-nav" class="nav nav-underline col-8 justify-content-center capped-1600 mx-auto">
+                <a class="nav-link active" aria-current="page" href="sales.html">
+                    <span class="title">My Drive</span>
+                </a>
+                <a class="nav-link" aria-current="page" href="sales.html">
+                    <span class="title">Shared Files</span>
+                </a>
+                <a class="nav-link" aria-current="page" href="sales.html">
+                    <span class="title">Archive</span>
+                </a>
+                <a class="nav-link" aria-current="page" href="sales.html">
+                    <span class="title">Bin</span>
+                </a>
+                <a class="nav-link" aria-current="page" href="sales.html">
+                    <span class="title">Stared</span>
+                </a>
+                <a class="nav-link" aria-current="page" href="sales.html">
+                    <span class="title">Recent Files</span>
+                </a>
+            </nav>
+        </div>
+        
+        
+        <!-- Receipt Pages -->
+        
+        <!-- Bank Feed Pages -->
+        
+        <!-- Reports -->
+    </header>
+
+    <div class="page capped-1900">
+        <main>
+            <div class="table-header d-flex justify-content-between">
+                <div class="left d-flex align-items-center">
+                    <h4 class="table-header-title" style="margin-right: 2vw !important">All Files</h4>
+                    <ui class="nav">
+                        <li class="nav-item">
+                            <a class="nav-link-item" href="#">
+                                <i class="fab fa-dropbox"></i>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link-item" href="#">
+                                <i class="fas fa-box"></i>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link-item" href="#">
+                                <i class="fab fa-google-drive"></i>
+                            </a>
+                        </li>
+                    </ui>
+                </div>
+                <div class="search-bar-wrap">
+                    <form class="autosearch position-relative">
+                        <div class="input-wrap">
+                            <span class="button-toggle-search">
+                                <i class="feather-search"></i>
+                            </span>
+                            <input class="input-rounded search-auto" id="search-auto" type="text" name="" placeholder="Search in drive?">
+                        </div>
+                        <!-- Search list -->
+                        <div class="autosearch-list">
+                            <ul class="autosearch-list-item-2 dropdown-menu w-100">
+                                <li>
+                                    <a class="dropdown-item" href="#">
+                                        <span class="icon"><i class="feather-search"></i></span>Sample Search
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="dropdown-item" href="#">
+                                        <span class="icon"><i class="feather-search"></i></span>Brief Document
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="dropdown-item" href="#">
+                                        <span class="icon"><i class="feather-search"></i></span>Get Sharable Link
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </form>
+                </div>
+
+                    <!-- button close search -->
+                <button type="button" class="btn btn-light btn-clear btn-close-search d-none"><i class="feather-x"></i></button>
+                <div class="btn-group" id="tabs" role="tablist">
+                    <!-- button open upload modal -->
+                    <button type="button" class="btn btn-light" data-bs-toggle="modal" data-bs-target="#uploadModal">
+                        <i class="feather-upload"></i>
+                        </button>
+                    <a class="btn btn-light" href="file-grid.html">
+                        <i class="feather-grid"></i>
+                    </a>
+                    <a class="btn btn-light" href="file-list.html">
+                        <i class="feather-list"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="container-fluid capped-1800 bg-white wide-list round-8 shadow-2 mb-30">
+                <div class="head d-flex justify-content-between align-items-center">
+                    <div class="d-flex w-100 align-items-center">
+                        <select class="form-select" style="max-width: 120px;border: none;font-weight: 600">
+                            <option>Recent Files</option>
+                            <option>Video</option>
+                            <option>Music</option>
+                            <option>Pictures</option>
+                            <option>Document</option>
+                        </select>
+                    </div>
+                </div>
+                <div style="padding: 0 24px;">
+                    <hr style="margin: 0">
+                </div>
+                <div style="padding: 24px;">
+                    <div class="row">
+                        <div class="col-md-2">
+                            <a class="card-file" href="#">
+                                <div class="card-thumbnail" style="background-image: url(./assets/img/thumbnail.png); background-position: center; background-size: cover;"></div>
+                                <div class="card-detail">
+                                    <span class="icon"><i class="feather-file"></i></span><span class="file-name">file-01.jpg</span>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-md-2">
+                            <a class="card-file" href="#">
+                                <div class="card-thumbnail" style="background-image: url(./assets/img/thumbnail.png); background-position: center; background-size: cover;"></div>
+                                <div class="card-detail">
+                                    <span class="icon"><i class="feather-file"></i></span><span class="file-name">file-01.jpg</span>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-md-2">
+                            <a class="card-file" href="#">
+                                <div class="card-thumbnail" style="background-image: url(./assets/img/thumbnail.png); background-position: center; background-size: cover;"></div>
+                                <div class="card-detail">
+                                    <span class="icon"><i class="feather-file"></i></span><span class="file-name">file-01.jpg</span>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-md-2">
+                            <a class="card-file" href="#">
+                                <div class="card-thumbnail" style="background-image: url(./assets/img/thumbnail.png); background-position: center; background-size: cover;"></div>
+                                <div class="card-detail">
+                                    <span class="icon"><i class="feather-file"></i></span><span class="file-name">file-01.jpg</span>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="head d-flex justify-content-between align-items-center">
+                    <div class="d-flex w-100 align-items-center">
+                        <select class="form-select" style="max-width: 120px;border: none;font-weight: 600">
+                            <option>Folders</option>
+                            <option>Video</option>
+                            <option>Music</option>
+                            <option>Pictures</option>
+                            <option>Document</option>
+                        </select>
+                    </div>
+                </div>
+                <div style="padding: 0 24px;">
+                    <hr style="margin: 0">
+                </div>
+                <div style="padding: 24px">
+                    <div class="row">
+                        <div class="col-md-2">
+                            <a class="card-folder" href="#">
+                                <span class="icon"><i class="fa fa-folder"></i></span>
+                                <span class="folder-name">Payroll</span>
+                            </a>
+                        </div>
+                        <div class="col-md-2">
+                            <a class="card-folder" href="#">
+                                <span class="icon"><i class="fa fa-folder"></i></span>
+                                <span class="folder-name">Balance Sheet</span>
+                            </a>
+                        </div>
+                        <div class="col-md-2">
+                            <a class="card-folder" href="#">
+                                <span class="icon"><i class="fa fa-folder"></i></span>
+                                <span class="folder-name">Company Do...</span>
+                            </a>
+                        </div>
+                        <div class="col-md-2">
+                            <a class="card-folder" href="#">
+                                <span class="icon"><i class="fa fa-folder"></i></span>
+                                <span class="folder-name">New Folder</span>
+                            </a>
+                        </div>
+                        <div class="col-md-2">
+                            <a class="card-folder" href="#">
+                                <span class="icon"><i class="fa fa-folder"></i></span>
+                                <span class="folder-name">Bookeping</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="head d-flex justify-content-between align-items-center">
+                    <div class="d-flex w-100 align-items-center">
+                        <select class="form-select" style="max-width: 120px;border: none;font-weight: 600">
+                            <option>Recent Files</option>
+                            <option>Video</option>
+                            <option>Music</option>
+                            <option>Pictures</option>
+                            <option>Document</option>
+                        </select>
+                    </div>
+                </div>
+                <div style="padding: 0 24px;">
+                    <hr style="margin: 0">
+                </div>
+                <div style="padding: 24px;">
+                    <div class="row">
+                        <div class="col-md-2">
+                            <a class="card-file" href="#">
+                                <div class="card-thumbnail" style="background-image: url(./assets/img/thumbnail.png); background-position: center; background-size: cover;"></div>
+                                <div class="card-detail">
+                                    <span class="icon"><i class="feather-file"></i></span><span class="file-name">file-01.jpg</span>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-md-2">
+                            <a class="card-file" href="#">
+                                <div class="card-thumbnail" style="background-image: url(./assets/img/thumbnail.png); background-position: center; background-size: cover;"></div>
+                                <div class="card-detail">
+                                    <span class="icon"><i class="feather-file"></i></span><span class="file-name">file-01.jpg</span>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-md-2">
+                            <a class="card-file" href="#">
+                                <div class="card-thumbnail" style="background-image: url(./assets/img/thumbnail.png); background-position: center; background-size: cover;"></div>
+                                <div class="card-detail">
+                                    <span class="icon"><i class="feather-file"></i></span><span class="file-name">file-01.jpg</span>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-md-2">
+                            <a class="card-file" href="#">
+                                <div class="card-thumbnail" style="background-image: url(./assets/img/thumbnail.png); background-position: center; background-size: cover;"></div>
+                                <div class="card-detail">
+                                    <span class="icon"><i class="feather-file"></i></span><span class="file-name">file-01.jpg</span>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+
+        <!-- Upload Modal -->
+    <!-- Modal -->
+    <div class="modal fade" id="uploadModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Upload File</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <div class="fileupload mini">
+                <div class="d-flex align-items-center justify-content-end mb-2">
+                    <span class="capicon cap-clip"></span><span class="text-black fw-bold ms-1 me-4">Attachments</span>
+                    <span class="text-main">Maximum Size:</span> <span class="text-black fw-bold">5MB</span>
+                </div>
+                <div class="dropzone dropzone-multiple" data-dropzone='{"url": "https://"}'>
+                    <!-- Fallback -->
+                    <div class="fallback">
+                        <div class="custom-file">
+                            <input type="file" class="form-control" id="customFileUploadMultiple" multiple>
+                            <label class="form-label" for="customFileUploadMultiple">Choose file</label>
+                        </div>
+                    </div>
+
+                    <!-- Preview -->
+                    <ul class="dz-preview dz-preview-multiple list-group list-group-lg list-group-flush"></ul>
+                    <div class="dz-default dz-message"><button class="dz-button" type="button">Drop files here to upload</button></div>
+                </div>
+            </div>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-light" data-bs-dismiss="modal">Close</button>
+            <button type="button" class="btn btn-primary"><span class="icon"><i class="feather-upload"></i></span>Upload</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    
+    <!-- JAVASCRIPT -->
+    <!-- Mighty JQuery -->
+    <script
+      src="https://code.jquery.com/jquery-3.1.0.js"
+      integrity="sha256-slogkvB1K3VOkzAI8QITxV3VzpOnkeNVsKvtkYLMjfk="
+      crossorigin="anonymous"
+    ></script>
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/4.7.2/d3.min.js"></script>
+    
+    <!-- D3Pie -->
+    <script src="./assets/vendor/d3pie.min.js"></script>
+    
+    <!-- D3Pie -->
+    <script src="./assets/vendor/vanilla-notify/vanilla-notify.js"></script>
+    
+    <!-- Vendor JS -->
+    <script src="./assets/js/vendor.bundle.js"></script>
+    
+    <!-- Theme JS -->
+    <script src="./assets/js/theme.bundle.js"></script>
+
+    <!-- Custom JS -->
+    <script src="./assets/js/main.js"></script>
+    
+</body>
+</html>
