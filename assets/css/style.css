@@ -1,10 +1,4 @@
-@font-face {
-  font-family: Cerebrisans;
-  src: url(../fonts/cerebrisans/cerebrisans-regular.ttf);
-}
-
 * {
-	font-family: 'Cerebrisans', 'Arial', sans-serrif;
 	outline: none !important;
 }
 
@@ -81,7 +75,7 @@ h1, h2, h3, h4, p, a {
 		position: relative;
 	}
 	.table-header .input-rounded {
-		min-width: 400px;
+		min-width: 16vw;
 	}
 	.nav-header-sec-active::before {
 		content: '';
@@ -424,4 +418,32 @@ main .wide-list .head {
 .fileupload.mini {
 	margin-bottom: 0;
 	margin-top: 0;
+}
+
+.back-button .icon {
+	width: 24px;
+	font-size: 14px;
+}
+
+.back-button {
+	margin-top: 16px;
+	color: #2c3e50;
+	margin-bottom: 20px;
+}
+
+.files-item {
+	padding: 5px 0;
+	border-bottom: 1px solid rgba(0,0,0,.2);
+	font-size: 14px;
+	color: #2c3e50;
+	margin-bottom: 16px;
+}
+
+.input-copy .btn {
+	width: 30px;
+	height: 35px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	font-size: 14px;
 }
