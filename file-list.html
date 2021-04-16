@@ -99,6 +99,20 @@
 
     <div class="page capped-1900">
         <main>
+            <div class="fileupload mini" style="margin-bottom: 20px;margin-top: 20px !important">
+                <div class="d-flex align-items-center justify-content-end mb-2">
+                    <span class="capicon cap-clip"></span><span class="text-black fw-bold ms-1 me-4">Attachments</span>
+                    <span class="text-main">Maximum Size:</span> <span class="text-black fw-bold">5MB</span>
+                </div>
+                <div style="margin-bottom: 20px" class="dropzone dropzone-multiple dz-clickable" data-dropzone="{&quot;url&quot;: &quot;https://&quot;}">
+                    <!-- Fallback -->
+                    
+
+                    <!-- Preview -->
+                    <ul class="dz-preview dz-preview-multiple list-group list-group-lg list-group-flush"></ul>
+                    <div class="dz-default dz-message"><button class="dz-button" type="button">Drop files here to upload</button></div>
+                </div>
+            </div>
             <div class="table-header d-flex justify-content-between">
                 <div class="left d-flex align-items-center">
                     <h4 class="table-header-title" style="margin-right: 2vw !important">All Files</h4>
@@ -143,7 +157,7 @@
                             <span class="button-toggle-search">
                                 <i class="feather-search"></i>
                             </span>
-                            <input class="input-rounded search-auto" style="width: 8vw" id="search-auto" type="text" name="" placeholder="Search in drive?">
+                            <input class="input-rounded search-auto" style="width: 12vw" id="search-auto" type="text" name="" placeholder="Search in drive?">
                         </div>
                         <!-- Search list -->
                         <div class="autosearch-list">
@@ -171,10 +185,6 @@
                     <!-- button close search -->
                 <button type="button" class="btn btn-light btn-clear btn-close-search d-none"><i class="feather-x"></i></button>
                 <div class="btn-group" id="tabs" role="tablist">
-                    <!-- button open upload modal -->
-                    <button type="button" class="btn btn-light" data-bs-toggle="modal" data-bs-target="#uploadModal">
-                        <i class="feather-upload"></i>
-                        </button>
                     <a class="btn btn-light" href="file-grid.html">
                         <i class="feather-grid"></i>
                     </a>
@@ -451,7 +461,7 @@
                             <div class="document-item" style="background-image: url(assets/img/demo-receipt-big.png); background-size: contain;background-position: center;"></div>
                             <div class="document-footer d-flex justify-content-center">
                                 <div class="button">
-                                    <button class="btn btn-outline-primary"><span class="icon"><i class="feather-printer"></i></span>Print</button>
+                                    <button class="btn btn-outline-accent"><span class="icon"><i class="feather-printer"></i></span>Print</button>
                                     <button class="btn btn-accent"><span class="icon"><i class="feather-download"></i></span>Download</button>
                                 </div>
                             </div>
@@ -973,60 +983,15 @@
                 
                 <div id="preview-sidebar-container" class="d-none preview-sidebar">
                     <ul>
-                        <li data-cap-tab="address-editor-tab"><span class="capicon cap-phonebook"></span>Logo & Business Address</li>
-                        <li data-cap-tab="new-customer-editor-tab"><span class="capicon cap-user"></span>Add New Customer</li>
-                        <li data-cap-tab="column-editor-tab"><span class="capicon cap-column"></span>Column for Invoice</li>
-                        <li data-cap-tab="items-editor-tab"><span class="capicon cap-trolly"></span>Product or Service</li>
-                        <li data-cap-tab="payment-editor-tab"><span class="capicon cap-checkout"></span>Accept Online Payment</li>
-                        <li data-cap-tab="style-editor-tab"><span class="capicon cap-theme"></span>Customise Invoice Style</li>
-                        <li data-cap-tab="recurring-editor-tab"><span class="capicon cap-reload"></span>Make Recurring</li>
-                        <li data-cap-tab="tut-video-editor-tab"><span class="capicon cap-file-video"></span>Video Tutorial</li>
-                        <li data-cap-tab="tut-video-editor-tab"><span class="capicon cap-file-document"></span>Document Tutorial</li>
-                        <li data-cap-tab="preview-editor-tab"><span class="capicon cap-eye"></span>Invoice Preview</li>
-                        <li data-cap-tab="save-editor-tab"><span class="capicon cap-file-save"></span>Save Invoice</li>
-                        <li data-cap-tab="print-editor-tab"><span class="capicon cap-print"></span>Print Invoice</li>
-                        <li data-cap-tab="email-editor-tab"><span class="capicon cap-email"></span>Email</li>
+                        <li data-cap-tab="address-editor-tab"><span class="fa fa-upload"></span>Upload</li>
+                        <li data-cap-tab="address-editor-tab"><span class="capicon cap-download"></span>Download</li>
+                        <li data-cap-tab="print-tab"><span class="capicon cap-print"></span>Print</li>
+                        <li data-cap-tab="send-email-tab"><span class="capicon cap-email"></span>Email</li>
+                        <li data-cap-tab="share-link-tab"><span class="feather-link-2"></span>Share Link</li>
+                        <li data-cap-tab="address-editor-tab"><span class="feather-info"></span>Info</li>
                     </ul>
                 </div>
         </div>
-    </div>
-
-          <!-- Upload Modal -->
-    <!-- Modal -->
-    <div class="modal fade" id="uploadModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-      <div class="modal-dialog modal-dialog-centered">
-        <div class="modal-content">
-          <div class="modal-header">
-            <h5 class="modal-title" id="exampleModalLabel">Upload File</h5>
-            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-          </div>
-          <div class="modal-body">
-            <div class="fileupload mini">
-                <div class="d-flex align-items-center justify-content-end mb-2">
-                    <span class="capicon cap-clip"></span><span class="text-black fw-bold ms-1 me-4">Attachments</span>
-                    <span class="text-main">Maximum Size:</span> <span class="text-black fw-bold">5MB</span>
-                </div>
-                <div class="dropzone dropzone-multiple" data-dropzone='{"url": "https://"}'>
-                    <!-- Fallback -->
-                    <div class="fallback">
-                        <div class="custom-file">
-                            <input type="file" class="form-control" id="customFileUploadMultiple" multiple>
-                            <label class="form-label" for="customFileUploadMultiple">Choose file</label>
-                        </div>
-                    </div>
-
-                    <!-- Preview -->
-                    <ul class="dz-preview dz-preview-multiple list-group list-group-lg list-group-flush"></ul>
-                    <div class="dz-default dz-message"><button class="dz-button" type="button">Drop files here to upload</button></div>
-                </div>
-            </div>
-          </div>
-          <div class="modal-footer">
-            <button type="button" class="btn btn-light" data-bs-dismiss="modal">Close</button>
-            <button type="button" class="btn btn-primary"><span class="icon"><i class="feather-upload"></i></span>Upload</button>
-          </div>
-        </div>
-      </div>
     </div>
 
     

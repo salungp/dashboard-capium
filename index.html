@@ -35,34 +35,6 @@
                     <a class="navbar-brand" href="#" style="margin-right: 4vw">
                         <img src="./assets/img/logo.svg" alt="">
                     </a>
-                    <form class="autosearch position-relative">
-                        <div class="input-wrap">
-                            <span>
-                                <i class="feather-search"></i>
-                            </span>
-                            <input class="input-rounded search-auto" id="search" type="text" name="" placeholder="What are you looking for?">
-                        </div>
-                        <!-- Search list -->
-                        <div class="autosearch-list">
-                            <ul class="autosearch-list-item dropdown-menu w-100">
-                                <li>
-                                    <a class="dropdown-item" href="#">
-                                        <span class="icon"><i class="feather-search"></i></span>Sample Search
-                                    </a>
-                                </li>
-                                <li>
-                                    <a class="dropdown-item" href="#">
-                                        <span class="icon"><i class="feather-search"></i></span>Brief Document
-                                    </a>
-                                </li>
-                                <li>
-                                    <a class="dropdown-item" href="#">
-                                        <span class="icon"><i class="feather-search"></i></span>Get Sharable Link
-                                    </a>
-                                </li>
-                            </ul>
-                        </div>
-                    </form>
                 </div>
                 <div class="justify-content-center" id="primary-nav">
                     <ul class="navbar-nav me-auto mb-2 mb-lg-0">
@@ -106,13 +78,13 @@
                     <span class="title">Archive</span>
                 </a>
                 <a class="nav-link" aria-current="page" href="sales.html">
-                    <span class="title">Bin</span>
-                </a>
-                <a class="nav-link" aria-current="page" href="sales.html">
-                    <span class="title">Stared</span>
+                    <span class="title">Starred</span>
                 </a>
                 <a class="nav-link" aria-current="page" href="sales.html">
                     <span class="title">Recent Files</span>
+                </a>
+                <a class="nav-link" aria-current="page" href="sales.html">
+                    <span class="title">Bin</span>
                 </a>
             </nav>
         </div>
@@ -127,6 +99,20 @@
 
     <div class="page capped-1900">
         <main>
+            <div class="fileupload mini" style="margin-bottom: 20px;margin-top: 20px !important">
+                <div class="d-flex align-items-center justify-content-end mb-2">
+                    <span class="capicon cap-clip"></span><span class="text-black fw-bold ms-1 me-4">Attachments</span>
+                    <span class="text-main">Maximum Size:</span> <span class="text-black fw-bold">5MB</span>
+                </div>
+                <div style="margin-bottom: 20px" class="dropzone dropzone-multiple dz-clickable" data-dropzone="{&quot;url&quot;: &quot;https://&quot;}">
+                    <!-- Fallback -->
+                    
+
+                    <!-- Preview -->
+                    <ul class="dz-preview dz-preview-multiple list-group list-group-lg list-group-flush"></ul>
+                    <div class="dz-default dz-message"><button class="dz-button" type="button">Drop files here to upload</button></div>
+                </div>
+            </div>
             <div class="table-header d-flex justify-content-between">
                 <div class="left d-flex align-items-center">
                     <h4 class="table-header-title" style="margin-right: 2vw !important">All Files</h4>
@@ -154,7 +140,7 @@
                             <span class="button-toggle-search">
                                 <i class="feather-search"></i>
                             </span>
-                            <input class="input-rounded search-auto" id="search-auto" type="text" name="" placeholder="Search in drive?">
+                            <input class="input-rounded search-auto" style="width: 36vw" id="search-auto" type="text" name="" placeholder="Search in drive?">
                         </div>
                         <!-- Search list -->
                         <div class="autosearch-list">
@@ -182,10 +168,6 @@
                     <!-- button close search -->
                 <button type="button" class="btn btn-light btn-clear btn-close-search d-none"><i class="feather-x"></i></button>
                 <div class="btn-group" id="tabs" role="tablist">
-                    <!-- button open upload modal -->
-                    <button type="button" class="btn btn-light" data-bs-toggle="modal" data-bs-target="#uploadModal">
-                        <i class="feather-upload"></i>
-                        </button>
                     <a class="btn btn-light" href="file-grid.html">
                         <i class="feather-grid"></i>
                     </a>
