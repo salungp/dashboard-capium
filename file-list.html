@@ -21,8 +21,10 @@
     <link rel="stylesheet" href="./assets/fontawesome/css/fontawesome.min.css" />
     <link rel="stylesheet" href="./assets/fontawesome/css/all.min.css" />
 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
     <!-- Custom CSS -->
     <link rel="stylesheet" href="./assets/css/style.css" />
+
     
     <!-- Title -->
     <title>Drive</title>
@@ -157,7 +159,7 @@
                             <span class="button-toggle-search">
                                 <i class="feather-search"></i>
                             </span>
-                            <input class="input-rounded search-auto" style="width: 12vw" id="search-auto" type="text" name="" placeholder="Search in drive?">
+                            <input class="input-rounded search-auto" style="width: 15vw" id="search-auto" type="text" name="" placeholder="Search in drive?">
                         </div>
                         <!-- Search list -->
                         <div class="autosearch-list">
@@ -195,9 +197,9 @@
             </div>
             <div class="container-fluid capped-1800 bg-white wide-list round-8 shadow-2 mb-30">
                 <div class="row">
-                    <div class="col-md-7">
-                        <div class="row">
-                            <div class="col-md-3 col-6">
+                    <div class="col-md-7 folder-list-toggle-2">
+                        <div class="d-flex">
+                            <div class="col-md-3 remove-padding">
                                 
                                 <div class="folder-list folder-list-active">
                                     <div class="folder-list-header">
@@ -205,7 +207,7 @@
                                         <hr>
                                     </div>
                                     <div class="folder-list-body">
-                                        <a class="folder-list-item justify-content-between" href="#">
+                                        <a class="folder-list-item folder-active justify-content-between" href="#">
                                             <span class="icon d-block"><i class="fa fa-folder"></i></span>
                                             <span class="folder-name-item d-block">Sharing</span>
                                             <i class="feather-chevron-right d-block"></i>
@@ -260,201 +262,203 @@
 
                             </div>
 
-                            <div class="col-md-3 col-6">
+                            <!-- <div class="col-md-12 d-flex folder-toggle animate__animated animate__bounceIn remove-padding"> -->
+                                <div class="col-md-3 remove-padding folder-toggle animate__animated animate__bounceIn">
                                 
-                                <div class="folder-list">
-                                    <div class="folder-list-header">
-                                        <div class="folder-wrap-title">Sub Folder</div>
-                                        <hr>
-                                    </div>
-                                    <div class="folder-list-body">
-                                        <a class="folder-list-item justify-content-between" href="#">
-                                            <span class="icon d-block"><i class="fa fa-folder"></i></span>
-                                            <span class="folder-name-item d-block">Sharing</span>
-                                            <i class="feather-chevron-right d-block"></i>
-                                        </a>
-                                        <a class="folder-list-item justify-content-between" href="#">
-                                            <span class="icon d-block"><i class="fa fa-folder"></i></span>
-                                            <span class="folder-name-item d-block">Sharing</span>
-                                            <i class="feather-chevron-right d-block"></i>
-                                        </a>
-                                        <a class="folder-list-item justify-content-between" href="#">
-                                            <span class="icon d-block"><i class="fa fa-folder"></i></span>
-                                            <span class="folder-name-item d-block">Sharing</span>
-                                            <i class="feather-chevron-right d-block"></i>
-                                        </a>
-                                        <a class="folder-list-item justify-content-between" href="#">
-                                            <span class="icon d-block"><i class="fa fa-folder"></i></span>
-                                            <span class="folder-name-item d-block">Sharing</span>
-                                            <i class="feather-chevron-right d-block"></i>
-                                        </a>
-                                        <a class="folder-list-item justify-content-between" href="#">
-                                            <span class="icon d-block"><i class="fa fa-folder"></i></span>
-                                            <span class="folder-name-item d-block">Sharing</span>
-                                            <i class="feather-chevron-right d-block"></i>
-                                        </a>
-                                    </div>
+                                    <div class="folder-list">
+                                        <div class="folder-list-header">
+                                            <div class="folder-wrap-title">Sub Folder</div>
+                                            <hr>
+                                        </div>
+                                        <div class="folder-list-body">
+                                            <a class="folder-list-item justify-content-between" href="#">
+                                                <span class="icon d-block"><i class="fa fa-folder"></i></span>
+                                                <span class="folder-name-item d-block">Sharing</span>
+                                                <i class="feather-chevron-right d-block"></i>
+                                            </a>
+                                            <a class="folder-list-item justify-content-between" href="#">
+                                                <span class="icon d-block"><i class="fa fa-folder"></i></span>
+                                                <span class="folder-name-item d-block">Sharing</span>
+                                                <i class="feather-chevron-right d-block"></i>
+                                            </a>
+                                            <a class="folder-list-item justify-content-between" href="#">
+                                                <span class="icon d-block"><i class="fa fa-folder"></i></span>
+                                                <span class="folder-name-item d-block">Sharing</span>
+                                                <i class="feather-chevron-right d-block"></i>
+                                            </a>
+                                            <a class="folder-list-item justify-content-between" href="#">
+                                                <span class="icon d-block"><i class="fa fa-folder"></i></span>
+                                                <span class="folder-name-item d-block">Sharing</span>
+                                                <i class="feather-chevron-right d-block"></i>
+                                            </a>
+                                            <a class="folder-list-item justify-content-between" href="#">
+                                                <span class="icon d-block"><i class="fa fa-folder"></i></span>
+                                                <span class="folder-name-item d-block">Sharing</span>
+                                                <i class="feather-chevron-right d-block"></i>
+                                            </a>
+                                        </div>
 
-                                    <div class="folder-list-header">
-                                        <div class="folder-wrap-title">Files</div>
-                                        <hr>
-                                    </div>
-                                    <div class="folder-list-body">
-                                        <a class="folder-list-item justify-content-between" href="#">
-                                            <span class="icon d-block"><i class="feather-file"></i></span>
-                                            <span class="folder-name-item d-block">Sharing</span>
-                                            <i class="feather-chevron-right d-block"></i>
-                                        </a>
-                                        <a class="folder-list-item justify-content-between" href="#">
-                                            <span class="icon d-block"><i class="feather-file"></i></span>
-                                            <span class="folder-name-item d-block">Sharing</span>
-                                            <i class="feather-chevron-right d-block"></i>
-                                        </a>
-                                        <a class="folder-list-item justify-content-between" href="#">
-                                            <span class="icon d-block"><i class="feather-file"></i></span>
-                                            <span class="folder-name-item d-block">Sharing</span>
-                                            <i class="feather-chevron-right d-block"></i>
-                                        </a>
-                                        <a class="folder-list-item justify-content-between" href="#">
-                                            <span class="icon d-block"><i class="feather-file"></i></span>
-                                            <span class="folder-name-item d-block">Sharing</span>
-                                            <i class="feather-chevron-right d-block"></i>
-                                        </a>
+                                        <div class="folder-list-header">
+                                            <div class="folder-wrap-title">Files</div>
+                                            <hr>
+                                        </div>
+                                        <div class="folder-list-body">
+                                            <a class="folder-list-item justify-content-between" href="#">
+                                                <span class="icon d-block"><i class="feather-file"></i></span>
+                                                <span class="folder-name-item d-block">Sharing</span>
+                                                <i class="feather-chevron-right d-block"></i>
+                                            </a>
+                                            <a class="folder-list-item justify-content-between" href="#">
+                                                <span class="icon d-block"><i class="feather-file"></i></span>
+                                                <span class="folder-name-item d-block">Sharing</span>
+                                                <i class="feather-chevron-right d-block"></i>
+                                            </a>
+                                            <a class="folder-list-item justify-content-between" href="#">
+                                                <span class="icon d-block"><i class="feather-file"></i></span>
+                                                <span class="folder-name-item d-block">Sharing</span>
+                                                <i class="feather-chevron-right d-block"></i>
+                                            </a>
+                                            <a class="folder-list-item justify-content-between" href="#">
+                                                <span class="icon d-block"><i class="feather-file"></i></span>
+                                                <span class="folder-name-item d-block">Sharing</span>
+                                                <i class="feather-chevron-right d-block"></i>
+                                            </a>
+                                        </div>
+
                                     </div>
 
                                 </div>
 
-                            </div>
+                                <div class="col-md-3 remove-padding folder-toggle animate__animated animate__bounceIn">
+                                    
+                                    <div class="folder-list">
+                                        <div class="folder-list-header">
+                                            <div class="folder-wrap-title">Sub Folder</div>
+                                            <hr>
+                                        </div>
+                                        <div class="folder-list-body">
+                                            <a class="folder-list-item justify-content-between" href="#">
+                                                <span class="icon d-block"><i class="fa fa-folder"></i></span>
+                                                <span class="folder-name-item d-block">Sharing</span>
+                                                <i class="feather-chevron-right d-block"></i>
+                                            </a>
+                                            <a class="folder-list-item justify-content-between" href="#">
+                                                <span class="icon d-block"><i class="fa fa-folder"></i></span>
+                                                <span class="folder-name-item d-block">Sharing</span>
+                                                <i class="feather-chevron-right d-block"></i>
+                                            </a>
+                                            <a class="folder-list-item justify-content-between" href="#">
+                                                <span class="icon d-block"><i class="fa fa-folder"></i></span>
+                                                <span class="folder-name-item d-block">Sharing</span>
+                                                <i class="feather-chevron-right d-block"></i>
+                                            </a>
+                                            <a class="folder-list-item justify-content-between" href="#">
+                                                <span class="icon d-block"><i class="fa fa-folder"></i></span>
+                                                <span class="folder-name-item d-block">Sharing</span>
+                                                <i class="feather-chevron-right d-block"></i>
+                                            </a>
+                                            <a class="folder-list-item justify-content-between" href="#">
+                                                <span class="icon d-block"><i class="fa fa-folder"></i></span>
+                                                <span class="folder-name-item d-block">Sharing</span>
+                                                <i class="feather-chevron-right d-block"></i>
+                                            </a>
+                                            <a class="folder-list-item justify-content-between" href="#">
+                                                <span class="icon d-block"><i class="fa fa-folder"></i></span>
+                                                <span class="folder-name-item d-block">Sharing</span>
+                                                <i class="feather-chevron-right d-block"></i>
+                                            </a>
+                                            <a class="folder-list-item justify-content-between" href="#">
+                                                <span class="icon d-block"><i class="fa fa-folder"></i></span>
+                                                <span class="folder-name-item d-block">Sharing</span>
+                                                <i class="feather-chevron-right d-block"></i>
+                                            </a>
+                                            <a class="folder-list-item justify-content-between" href="#">
+                                                <span class="icon d-block"><i class="fa fa-folder"></i></span>
+                                                <span class="folder-name-item d-block">Sharing</span>
+                                                <i class="feather-chevron-right d-block"></i>
+                                            </a>
+                                            <a class="folder-list-item justify-content-between" href="#">
+                                                <span class="icon d-block"><i class="fa fa-folder"></i></span>
+                                                <span class="folder-name-item d-block">Sharing</span>
+                                                <i class="feather-chevron-right d-block"></i>
+                                            </a>
+                                            <a class="folder-list-item justify-content-between" href="#">
+                                                <span class="icon d-block"><i class="fa fa-folder"></i></span>
+                                                <span class="folder-name-item d-block">Sharing</span>
+                                                <i class="feather-chevron-right d-block"></i>
+                                            </a>
+                                        </div>
+                                    </div>
 
-                            <div class="col-md-3 col-6">
-                                
-                                <div class="folder-list">
-                                    <div class="folder-list-header">
-                                        <div class="folder-wrap-title">Sub Folder</div>
-                                        <hr>
-                                    </div>
-                                    <div class="folder-list-body">
-                                        <a class="folder-list-item justify-content-between" href="#">
-                                            <span class="icon d-block"><i class="fa fa-folder"></i></span>
-                                            <span class="folder-name-item d-block">Sharing</span>
-                                            <i class="feather-chevron-right d-block"></i>
-                                        </a>
-                                        <a class="folder-list-item justify-content-between" href="#">
-                                            <span class="icon d-block"><i class="fa fa-folder"></i></span>
-                                            <span class="folder-name-item d-block">Sharing</span>
-                                            <i class="feather-chevron-right d-block"></i>
-                                        </a>
-                                        <a class="folder-list-item justify-content-between" href="#">
-                                            <span class="icon d-block"><i class="fa fa-folder"></i></span>
-                                            <span class="folder-name-item d-block">Sharing</span>
-                                            <i class="feather-chevron-right d-block"></i>
-                                        </a>
-                                        <a class="folder-list-item justify-content-between" href="#">
-                                            <span class="icon d-block"><i class="fa fa-folder"></i></span>
-                                            <span class="folder-name-item d-block">Sharing</span>
-                                            <i class="feather-chevron-right d-block"></i>
-                                        </a>
-                                        <a class="folder-list-item justify-content-between" href="#">
-                                            <span class="icon d-block"><i class="fa fa-folder"></i></span>
-                                            <span class="folder-name-item d-block">Sharing</span>
-                                            <i class="feather-chevron-right d-block"></i>
-                                        </a>
-                                        <a class="folder-list-item justify-content-between" href="#">
-                                            <span class="icon d-block"><i class="fa fa-folder"></i></span>
-                                            <span class="folder-name-item d-block">Sharing</span>
-                                            <i class="feather-chevron-right d-block"></i>
-                                        </a>
-                                        <a class="folder-list-item justify-content-between" href="#">
-                                            <span class="icon d-block"><i class="fa fa-folder"></i></span>
-                                            <span class="folder-name-item d-block">Sharing</span>
-                                            <i class="feather-chevron-right d-block"></i>
-                                        </a>
-                                        <a class="folder-list-item justify-content-between" href="#">
-                                            <span class="icon d-block"><i class="fa fa-folder"></i></span>
-                                            <span class="folder-name-item d-block">Sharing</span>
-                                            <i class="feather-chevron-right d-block"></i>
-                                        </a>
-                                        <a class="folder-list-item justify-content-between" href="#">
-                                            <span class="icon d-block"><i class="fa fa-folder"></i></span>
-                                            <span class="folder-name-item d-block">Sharing</span>
-                                            <i class="feather-chevron-right d-block"></i>
-                                        </a>
-                                        <a class="folder-list-item justify-content-between" href="#">
-                                            <span class="icon d-block"><i class="fa fa-folder"></i></span>
-                                            <span class="folder-name-item d-block">Sharing</span>
-                                            <i class="feather-chevron-right d-block"></i>
-                                        </a>
-                                    </div>
                                 </div>
 
-                            </div>
+                                <div class="col-md-3 remove-padding folder-toggle animate__animated animate__bounceIn">
+                                    
+                                    <div class="folder-list">
+                                        <div class="folder-list-header">
+                                            <div class="folder-wrap-title">Sub Folder</div>
+                                            <hr>
+                                        </div>
+                                        <div class="folder-list-body">
+                                            <a class="folder-list-item justify-content-between" href="#">
+                                                <span class="icon d-block"><i class="fa fa-folder"></i></span>
+                                                <span class="folder-name-item d-block">Sharing</span>
+                                                <i class="feather-chevron-right d-block"></i>
+                                            </a>
+                                            <a class="folder-list-item justify-content-between" href="#">
+                                                <span class="icon d-block"><i class="fa fa-folder"></i></span>
+                                                <span class="folder-name-item d-block">Sharing</span>
+                                                <i class="feather-chevron-right d-block"></i>
+                                            </a>
+                                            <a class="folder-list-item justify-content-between" href="#">
+                                                <span class="icon d-block"><i class="fa fa-folder"></i></span>
+                                                <span class="folder-name-item d-block">Sharing</span>
+                                                <i class="feather-chevron-right d-block"></i>
+                                            </a>
+                                            <a class="folder-list-item justify-content-between" href="#">
+                                                <span class="icon d-block"><i class="fa fa-folder"></i></span>
+                                                <span class="folder-name-item d-block">Sharing</span>
+                                                <i class="feather-chevron-right d-block"></i>
+                                            </a>
+                                            <a class="folder-list-item justify-content-between" href="#">
+                                                <span class="icon d-block"><i class="fa fa-folder"></i></span>
+                                                <span class="folder-name-item d-block">Sharing</span>
+                                                <i class="feather-chevron-right d-block"></i>
+                                            </a>
+                                            <a class="folder-list-item justify-content-between" href="#">
+                                                <span class="icon d-block"><i class="fa fa-folder"></i></span>
+                                                <span class="folder-name-item d-block">Sharing</span>
+                                                <i class="feather-chevron-right d-block"></i>
+                                            </a>
+                                            <a class="folder-list-item justify-content-between" href="#">
+                                                <span class="icon d-block"><i class="fa fa-folder"></i></span>
+                                                <span class="folder-name-item d-block">Sharing</span>
+                                                <i class="feather-chevron-right d-block"></i>
+                                            </a>
+                                            <a class="folder-list-item justify-content-between" href="#">
+                                                <span class="icon d-block"><i class="fa fa-folder"></i></span>
+                                                <span class="folder-name-item d-block">Sharing</span>
+                                                <i class="feather-chevron-right d-block"></i>
+                                            </a>
+                                            <a class="folder-list-item justify-content-between" href="#">
+                                                <span class="icon d-block"><i class="fa fa-folder"></i></span>
+                                                <span class="folder-name-item d-block">Sharing</span>
+                                                <i class="feather-chevron-right d-block"></i>
+                                            </a>
+                                            <a class="folder-list-item justify-content-between" href="#">
+                                                <span class="icon d-block"><i class="fa fa-folder"></i></span>
+                                                <span class="folder-name-item d-block">Sharing</span>
+                                                <i class="feather-chevron-right d-block"></i>
+                                            </a>
+                                        </div>
+                                    </div>
 
-                            <div class="col-md-3 col-6">
-                                
-                                <div class="folder-list">
-                                    <div class="folder-list-header">
-                                        <div class="folder-wrap-title">Sub Folder</div>
-                                        <hr>
-                                    </div>
-                                    <div class="folder-list-body">
-                                        <a class="folder-list-item justify-content-between" href="#">
-                                            <span class="icon d-block"><i class="fa fa-folder"></i></span>
-                                            <span class="folder-name-item d-block">Sharing</span>
-                                            <i class="feather-chevron-right d-block"></i>
-                                        </a>
-                                        <a class="folder-list-item justify-content-between" href="#">
-                                            <span class="icon d-block"><i class="fa fa-folder"></i></span>
-                                            <span class="folder-name-item d-block">Sharing</span>
-                                            <i class="feather-chevron-right d-block"></i>
-                                        </a>
-                                        <a class="folder-list-item justify-content-between" href="#">
-                                            <span class="icon d-block"><i class="fa fa-folder"></i></span>
-                                            <span class="folder-name-item d-block">Sharing</span>
-                                            <i class="feather-chevron-right d-block"></i>
-                                        </a>
-                                        <a class="folder-list-item justify-content-between" href="#">
-                                            <span class="icon d-block"><i class="fa fa-folder"></i></span>
-                                            <span class="folder-name-item d-block">Sharing</span>
-                                            <i class="feather-chevron-right d-block"></i>
-                                        </a>
-                                        <a class="folder-list-item justify-content-between" href="#">
-                                            <span class="icon d-block"><i class="fa fa-folder"></i></span>
-                                            <span class="folder-name-item d-block">Sharing</span>
-                                            <i class="feather-chevron-right d-block"></i>
-                                        </a>
-                                        <a class="folder-list-item justify-content-between" href="#">
-                                            <span class="icon d-block"><i class="fa fa-folder"></i></span>
-                                            <span class="folder-name-item d-block">Sharing</span>
-                                            <i class="feather-chevron-right d-block"></i>
-                                        </a>
-                                        <a class="folder-list-item justify-content-between" href="#">
-                                            <span class="icon d-block"><i class="fa fa-folder"></i></span>
-                                            <span class="folder-name-item d-block">Sharing</span>
-                                            <i class="feather-chevron-right d-block"></i>
-                                        </a>
-                                        <a class="folder-list-item justify-content-between" href="#">
-                                            <span class="icon d-block"><i class="fa fa-folder"></i></span>
-                                            <span class="folder-name-item d-block">Sharing</span>
-                                            <i class="feather-chevron-right d-block"></i>
-                                        </a>
-                                        <a class="folder-list-item justify-content-between" href="#">
-                                            <span class="icon d-block"><i class="fa fa-folder"></i></span>
-                                            <span class="folder-name-item d-block">Sharing</span>
-                                            <i class="feather-chevron-right d-block"></i>
-                                        </a>
-                                        <a class="folder-list-item justify-content-between" href="#">
-                                            <span class="icon d-block"><i class="fa fa-folder"></i></span>
-                                            <span class="folder-name-item d-block">Sharing</span>
-                                            <i class="feather-chevron-right d-block"></i>
-                                        </a>
-                                    </div>
                                 </div>
-
-                            </div>
+                            <!-- </div> -->
 
                         </div>
                     </div>
-                    <div class="col-md-5">
+                    <div class="col-md-5 folder-list-toggle">
                         
                         <!-- Preview Document -->
                         <div class="document-preview">

@@ -384,10 +384,11 @@ input[type="checkbox"] {
 	width: 18px;
 }
 
-.folder-list-item:hover {
+.folder-list-item:hover, .folder-active {
 	background-color: #f6f6f6;
 	color: #34495e;
 }
+
 
 .folder-list-active {
 	box-shadow: 3px 0 6px rgba(0,0,0,.1);
@@ -449,5 +450,18 @@ main .wide-list .head {
 .btn-outline-accent {
 	border-color: #624096;
 	color: #624096;
+	background-color: #ffffff;
+}
+
+.row > .remove-padding {
+	padding-left: 0 !important;
+	padding-right: 0 !important;
+}
+
+.hide {
+	display: none !important;
+}
+
+.folder-toggle {
 	background-color: #ffffff;
 }

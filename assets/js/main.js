@@ -1,5 +1,7 @@
 $( function() {
 
+  var cond = true;
+
   $('.button-toggle-search').click(function() {
   	$('.input-rounded').toggleClass('active');
   	$('.btn-close-search').toggleClass('d-none');
@@ -22,6 +24,12 @@ $( function() {
 
   $('#search-auto').click(function() {
     $('.autosearch-list-item-2').toggleClass('show');
+  });
+
+  $('.folder-list-item').click(function() {
+    $('.folder-toggle').toggleClass('hide');
+    $('.folder-toggle').toggleClass('animate__animated');
+    $('.folder-toggle').toggleClass('animate__tada');
   });
 
   $(window).click(function(event) {
